@@ -1,7 +1,8 @@
 <template>
-	<SiteHeader />
+	<div>
+		<p>Heya! 👋</p>
+		<p>I'm Rijk</p>
+	</div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

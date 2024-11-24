@@ -1,10 +1,38 @@
 :root {
 	--background-color: #ffffff;
 	--foreground-color: #0f1419;
+	--space: 0.6rem;
+}
+
+* {
+	box-sizing: border-box;
+	text-box-trim: both;
+	text-box-edge: cap alphabetic;
+}
+
+html {
+	font-size: 1.25rem;
 }
 
 body {
+	margin: 0;
 	background: var(--background-color);
 	color: var(--foreground-color);
 	font-family: "Triplicate A Poly", monospace;
+	text-box-trim: both;
+	text-box-edge: cap alphabetic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+ul, ol, p {
+	margin: 0;
 }
