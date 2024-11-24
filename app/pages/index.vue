@@ -1,3 +1,7 @@
 <template>
-	<h1>Hello World</h1>
+	<SiteHeader />
 </template>
+
+<style scoped>
+
+</style>
