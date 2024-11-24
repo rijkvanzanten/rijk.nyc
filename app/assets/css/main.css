@@ -1,0 +1,10 @@
+:root {
+	--background-color: #ffffff;
+	--foreground-color: #0f1419;
+}
+
+body {
+	background: var(--background-color);
+	color: var(--foreground-color);
+	font-family: "Triplicate A Poly", monospace;
+}
