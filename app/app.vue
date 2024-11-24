@@ -12,22 +12,20 @@
 
 <style>
 :root {
-	--columns: 2;
-	--areas:
-		"header header"
-		"nav nav"
-		"page page";
+	--columns: 8;
 }
 
 #grid {
 	padding: var(--space);
 	display: grid;
 	grid-template-columns: repeat(var(--columns), 1fr);
-	gap: calc(var(--space) * 2) var(--space);
-	grid-template-areas: var(--areas);
+	gap: var(--space-lg) var(--space);
+
+	/* Each cell should have it's own background set to background-color */
+	background-color: var(--foreground-color);
 }
 
-#header {
+/* #header {
 	grid-area: header;
 }
 
@@ -37,5 +35,5 @@
 
 #page {
 	grid-area: page;
-}
+} */
 </style>

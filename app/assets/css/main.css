@@ -1,7 +1,8 @@
 :root {
 	--background-color: #ffffff;
 	--foreground-color: #0f1419;
-	--space: 0.6rem;
+	--space: clamp(0.3rem, 1.5vw, 2rem);
+	--space-lg: 3vw;
 }
 
 * {
