@@ -1,7 +1,6 @@
 <template>
 	<div>
-		<p>Heya! 👋</p>
-		<p>I'm Rijk</p>
+		<ContentDoc />
 	</div>
 </template>
 
