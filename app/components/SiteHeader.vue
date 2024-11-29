@@ -6,9 +6,12 @@
 		>
 			<SiteLogo />
 		</NuxtLink>
-		<div class="title">
-			<h1>Rijk van Zanten</h1>
-		</div>
+		<NuxtLink
+			to="/"
+			class="title"
+		>
+			<span>Rijk van Zanten</span>
+		</NuxtLink>
 	</header>
 </template>
 
@@ -32,9 +35,11 @@ header {
 	align-content: center;
 	padding: var(--space) var(--space-lg);
 	container-type: size;
+	color: var(--foreground-color);
+	text-decoration: none;
 }
 
-h1 {
+span {
 	font-family: 'Olde', serif;
 	font-size: 70cqh;
 }

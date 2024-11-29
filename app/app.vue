@@ -21,7 +21,7 @@
 	grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
 	gap: var(--space);
 	min-height: 100%;
-	grid-template-rows: max-content;
+	grid-template-rows: max-content 1fr max-content;
 	align-items: stretch;
 
 	/* Each cell should have it's own background set to background-color */

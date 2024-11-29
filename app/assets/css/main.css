@@ -1,27 +1,33 @@
 :root {
 	--background-color: #ffffff;
-	--foreground-color: #0f1419;
+	--foreground-color: #101729;
 	--space: clamp(0.3rem, 1.5vw, 2rem);
 	--space-lg: 3vw;
 }
 
 * {
 	box-sizing: border-box;
-	text-box-trim: both;
-	text-box-edge: cap alphabetic;
 }
 
 html {
-	font-size: 1.25rem;
+	font-size: 1rem;
+
+	@media (width > 550px) {
+		font-size: 1.25rem;
+	}
 }
 
 body {
 	margin: 0;
+	hyphens: auto;
+	line-height: 1.4;
 	background: var(--background-color);
 	color: var(--foreground-color);
 	font-family: "Triplicate A Poly", monospace;
-	text-box-trim: both;
-	text-box-edge: cap alphabetic;
+}
+
+html, body, #__nuxt {
+	height: 100%;
 }
 
 h1,
@@ -34,6 +40,13 @@ h5 {
 	margin: 0;
 }
 
-ul, ol, p {
+ul, ol {
+	padding-inline-start: 0;
+	list-style-position: inside;
+}
+
+ul,
+ol,
+p {
 	margin: 0;
 }
