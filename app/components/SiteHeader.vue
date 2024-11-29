@@ -1,8 +1,11 @@
 <template>
 	<header>
-		<div class="logo">
+		<NuxtLink
+			to="/"
+			class="logo"
+		>
 			<SiteLogo />
-		</div>
+		</NuxtLink>
 		<div class="title">
 			<h1>Rijk van Zanten</h1>
 		</div>
@@ -33,6 +36,6 @@ header {
 
 h1 {
 	font-family: 'Olde', serif;
-	font-size: 78cqh;
+	font-size: 70cqh;
 }
 </style>
