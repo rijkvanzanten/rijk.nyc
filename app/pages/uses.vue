@@ -1,3 +1,3 @@
 <template>
-	<div>Uses</div>
+	<div><ContentDoc /></div>
 </template>

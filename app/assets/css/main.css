@@ -13,17 +13,18 @@ html {
 	font-size: 1rem;
 
 	@media (width > 550px) {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 }
 
 body {
 	margin: 0;
 	hyphens: auto;
-	line-height: 1.4;
+	line-height: 1.5;
 	background: var(--background-color);
 	color: var(--foreground-color);
 	font-family: "Triplicate A Poly", monospace;
+	background-color: var(--foreground-color); /* Each cell should have it's own background set to background-color */
 }
 
 html, body, #__nuxt {
@@ -36,13 +37,12 @@ h3,
 h4,
 h5 {
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 700;
 	margin: 0;
 }
 
 ul, ol {
-	padding-inline-start: 0;
-	list-style-position: inside;
+	padding-inline-start: 1.5ch;
 }
 
 ul,

@@ -1,8 +1,9 @@
 <template>
 	<div>
+		<ContentDoc />
 		<ContentList
 			v-slot="{ list }"
-			path="/blog"
+			path="/blog/"
 		>
 			<ol>
 				<li
