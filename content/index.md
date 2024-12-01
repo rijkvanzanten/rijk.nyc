@@ -1,7 +1,13 @@
-# Hey, I'm Rijk 👋
+# Heya, I'm Rijk 👋
 
-I'm a software developer based in New York City. I'm passionate about building high-quality web applications and creating excellent user experiences.
+I'm a user experience designer and open-source software developer. I co-founded and am currently the lead maintainer of [Directus](https://directus.io). I also teach part time at [Parsons School of Design](https://www.newschool.edu/parsons/).
 
-I specialize in full-stack development and enjoy working with modern web technologies. When I'm not coding, you can find me exploring the city or working on side projects.
+Outside of programming, [I enjoy playing music](https://open.spotify.com/artist/1VzpogOest0cp0xytyp36k). I usually play bass, but you can find me on the drums or guitar as well.
 
-Want to get in touch? Feel free to [reach out](mailto:contact@rijk.nyc).
+While I have accounts on most major social media networks, I'm currently most active on [Bluesky](https://bsky.app/profile/rijk.nyc). Drop me a note or follow over there!
+
+## Contact
+
+I'm best reached through [Bluesky](https://bsky.app/profile/rijk.nyc) or email: rijkvanzanten@me.com&nbsp;(personal) or rijk@directus.io&nbsp;(business).
+
+<small>No cold sales outreach please 🙏</small>
