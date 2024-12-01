@@ -3,7 +3,7 @@
 		<ContentDoc />
 		<ContentList
 			v-slot="{ list }"
-			path="/blog/"
+			path="/talks/"
 		>
 			<ol>
 				<li
@@ -11,7 +11,7 @@
 					:key="article._path"
 				>
 					<NuxtLink :to="article._path">
-						<NuxtTime :datetime="article.date" /> — {{ article.title }}
+						{{ article.name }}
 					</NuxtLink>
 				</li>
 			</ol>
@@ -21,6 +21,8 @@
 
 <style scoped>
 ol {
+	margin-top: 2rem !important;
+	display: block;
 	list-style: none;
 	padding: 0;
 }

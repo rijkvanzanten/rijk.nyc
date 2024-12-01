@@ -4,16 +4,16 @@
 			/about
 		</NuxtLink>
 
-		<NuxtLink to="/uses">
-			/uses
-		</NuxtLink>
-
 		<NuxtLink to="/talks">
 			/talks
 		</NuxtLink>
 
 		<NuxtLink to="/blog">
 			/blog
+		</NuxtLink>
+
+		<NuxtLink to="/uses">
+			/uses
 		</NuxtLink>
 	</nav>
 </template>
