@@ -6,6 +6,7 @@ export default defineNuxtConfig({
 		'@nuxt/content',
 		'nuxt-time',
 		'@nuxt/scripts',
+		'@nuxtjs/robots',
 	],
 	devtools: { enabled: true },
 
