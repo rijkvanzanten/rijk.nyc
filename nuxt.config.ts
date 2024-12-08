@@ -11,6 +11,19 @@ export default defineNuxtConfig({
 
 	css: ['~/assets/css/main.css'],
 
+	content: {
+		markdown: {
+			remarkPlugins: [
+				[
+					'@mavrin/remark-typograf',
+					{
+						locale: ['en-US'],
+					},
+				],
+			],
+		},
+	},
+
 	future: {
 		compatibilityVersion: 4,
 	},
