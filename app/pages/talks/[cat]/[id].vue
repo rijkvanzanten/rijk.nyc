@@ -1,9 +1,5 @@
 <template>
 	<div>
-		<NuxtLink to="/talks">
-			← All talks
-		</NuxtLink>
-		<hr>
 		<ContentDoc>
 			<template #default="{ doc }">
 				<h1>{{ doc.name }}</h1>
@@ -44,6 +40,12 @@
 				</template>
 			</template>
 		</ContentDoc>
+
+		<hr>
+
+		<NuxtLink to="/talks">
+			← Back to talks
+		</NuxtLink>
 	</div>
 </template>
 

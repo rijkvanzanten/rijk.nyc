@@ -53,12 +53,21 @@ h5 {
 	}
 }
 
-ul, ol {
-	padding-inline-start: 1.5ch;
-}
-
 ul,
 ol,
 p {
 	margin: 0;
+}
+
+sup {
+	margin-inline-end: 1ch;
+	line-height: 0;
+}
+
+.footnotes, & h2 {
+	font-size: 0.8rem;
+
+	::marker {
+		vertical-align: super;
+	}
 }
