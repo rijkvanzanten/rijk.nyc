@@ -64,8 +64,10 @@ sup {
 	line-height: 0;
 }
 
-.footnotes, & h2 {
-	font-size: 0.8rem;
+.footnotes {
+	&, & h2 {
+		font-size: 0.8rem;
+	}
 
 	::marker {
 		vertical-align: super;
