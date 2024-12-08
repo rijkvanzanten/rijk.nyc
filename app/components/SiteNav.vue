@@ -45,4 +45,14 @@ a {
 		}
 	}
 }
+
+.router-link-active {
+	position: relative;
+}
+
+.router-link-active::before {
+	content: '→';
+	position: absolute;
+	inset-inline-start: -1.5ch;
+}
 </style>

@@ -1,21 +1,12 @@
 <template>
 	<div>
 		<ContentDoc />
-		<ContentList
-			v-slot="{ list }"
-			path="/talks/"
-		>
-			<ol>
-				<li
-					v-for="article in list"
-					:key="article._path"
-				>
-					<NuxtLink :to="article._path">
-						{{ article.name }}
-					</NuxtLink>
-				</li>
-			</ol>
-		</ContentList>
+
+		<h2>Web Development</h2>
+		<TalksList path="/talks/web" />
+
+		<h2>Miscellaneous</h2>
+		<TalksList path="/talks/misc" />
 	</div>
 </template>
 

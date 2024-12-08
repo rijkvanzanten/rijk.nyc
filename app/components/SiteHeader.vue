@@ -42,5 +42,6 @@ header {
 span {
 	font-family: 'Olde', serif;
 	font-size: 70cqh;
+	text-box-edge: cap alphabetic;
 }
 </style>
