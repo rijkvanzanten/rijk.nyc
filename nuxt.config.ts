@@ -7,10 +7,15 @@ export default defineNuxtConfig({
 		'nuxt-time',
 		'@nuxt/scripts',
 		'@nuxtjs/robots',
+		'@nuxtjs/sitemap',
 	],
 	devtools: { enabled: true },
 
 	css: ['~/assets/css/main.css'],
+
+	site: {
+		url: 'rijk.nyc',
+	},
 
 	content: {
 		markdown: {
@@ -30,6 +35,12 @@ export default defineNuxtConfig({
 	},
 	compatibilityDate: '2024-11-01',
 
+	nitro: {
+		prerender: {
+			routes: ['/sitemap.xml'],
+		},
+	},
+
 	eslint: {
 		config: {
 			stylistic: {
@@ -43,5 +54,9 @@ export default defineNuxtConfig({
 		defaults: {
 			weights: [400, 700],
 		},
+	},
+
+	sitemap: {
+		strictNuxtContentPaths: true,
 	},
 });

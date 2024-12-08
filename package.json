@@ -23,6 +23,7 @@
 	"devDependencies": {
 		"@mavrin/remark-typograf": "2.2.0",
 		"@nuxt/scripts": "0.9.5",
+		"@nuxtjs/sitemap": "7.0.0",
 		"nuxt-time": "1.0.3",
 		"typescript": "5.7.2"
 	}
