@@ -37,11 +37,16 @@ header {
 	container-type: size;
 	color: var(--foreground-color);
 	text-decoration: none;
+	text-box-trim: trim-both;
+	text-box-edge: ex alphabetic;
+	display: flex;
+	align-items: center;
 }
 
 span {
 	font-family: 'Olde', serif;
 	font-size: 70cqh;
-	text-box-edge: cap alphabetic;
+	text-box-trim: trim-both;
+	text-box-edge: ex alphabetic;
 }
 </style>

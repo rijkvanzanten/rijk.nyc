@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 		'@nuxt/scripts',
 		'@nuxtjs/robots',
 		'@nuxtjs/sitemap',
+		'@nuxt/icon',
 	],
 	devtools: { enabled: true },
 
