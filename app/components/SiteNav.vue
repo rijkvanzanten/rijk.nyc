@@ -8,8 +8,8 @@
 			/talks
 		</NuxtLink>
 
-		<NuxtLink to="/blog">
-			/blog
+		<NuxtLink to="/posts">
+			/posts
 		</NuxtLink>
 
 		<NuxtLink to="/uses">

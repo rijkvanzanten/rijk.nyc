@@ -3,12 +3,12 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxt/eslint',
 		'@nuxt/fonts',
-		'@nuxt/content',
 		'nuxt-time',
 		'@nuxt/scripts',
 		'@nuxtjs/robots',
 		'@nuxtjs/sitemap',
 		'@nuxt/icon',
+		'@nuxt/content',
 	],
 
 	devtools: { enabled: true },
@@ -36,15 +36,14 @@ export default defineNuxtConfig({
 	},
 
 	content: {
-		markdown: {
-			remarkPlugins: [
-				[
-					'@mavrin/remark-typograf',
-					{
+		build: {
+			markdown: {
+				remarkPlugins: {
+					'@mavrin/remark-typograf': {
 						locale: ['en-US'],
 					},
-				],
-			],
+				},
+			},
 		},
 	},
 
@@ -72,9 +71,5 @@ export default defineNuxtConfig({
 		defaults: {
 			weights: [400, 700],
 		},
-	},
-
-	sitemap: {
-		strictNuxtContentPaths: true,
 	},
 });

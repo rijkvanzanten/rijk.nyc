@@ -1,12 +1,30 @@
+<script lang="ts" setup>
+const { data: page } = await useAsyncData('/talks', () => {
+	return queryCollection('pages').path('/talks').first();
+});
+
+const { data: talks } = await useAsyncData('$talks-list', () => {
+	return queryCollection('talks').select('path', 'title').all();
+});
+</script>
+
 <template>
 	<div>
-		<ContentDoc />
+		<ContentRenderer
+			v-if="page"
+			:value="page"
+		/>
 
-		<h2>Web Development</h2>
-		<TalksList path="/talks/web" />
-
-		<h2>Miscellaneous</h2>
-		<TalksList path="/talks/misc" />
+		<ol v-if="talks">
+			<li
+				v-for="article in talks"
+				:key="article.path"
+			>
+				<NuxtLink :to="article.path">
+					{{ article.title }}
+				</NuxtLink>
+			</li>
+		</ol>
 	</div>
 </template>
 

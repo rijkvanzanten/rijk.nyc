@@ -22,10 +22,6 @@
 
 html {
 	font-size: 1rem;
-
-	@media (width > 550px) {
-		font-size: 1.2rem;
-	}
 }
 
 body {
