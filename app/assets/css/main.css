@@ -1,8 +1,19 @@
 :root {
-	--background-color: #ffffff;
-	--foreground-color: #101729;
+	--color-background: #ffffff;
+	--color-foreground: #101729;
+	--color-link: #265bbe;
+	--color-link-visited: #6844b9;
 	--space: clamp(0.3rem, 1.5vw, 2rem);
 	--space-lg: 3vw;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #101729;
+		--color-foreground: #ffffff;
+		--color-link: #539bf5;
+		--color-link-visited: #b083f0;
+	}
 }
 
 * {
@@ -21,14 +32,21 @@ body {
 	margin: 0;
 	hyphens: auto;
 	line-height: 1.5;
-	background: var(--background-color);
-	color: var(--foreground-color);
+	background: var(--color-background);
+	color: var(--color-foreground);
 	font-family: "Triplicate A Poly", monospace;
-	background-color: var(--foreground-color); /* Each cell should have it's own background set to background-color */
 }
 
 html, body, #__nuxt {
 	height: 100%;
+}
+
+a {
+	color: var(--color-link);
+}
+
+a:visited {
+	color: var(--color-link-visited);
 }
 
 h1,

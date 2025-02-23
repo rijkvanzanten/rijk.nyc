@@ -7,7 +7,6 @@
 			<NuxtPage />
 		</div>
 		<SiteNav id="nav" />
-		<SiteLinks id="links" />
 	</div>
 </template>
 
