@@ -12,8 +12,8 @@
 		"lint:fix": "eslint . --fix"
 	},
 	"dependencies": {
-		"@iconify-json/simple-icons": "1.2.25",
-		"@nuxt/content": "3.2.1",
+		"@iconify-json/simple-icons": "1.2.26",
+		"@nuxt/content": "3.2.2",
 		"@nuxt/eslint": "1.1.0",
 		"@nuxt/fonts": "0.10.3",
 		"@nuxt/icon": "1.10.3",
