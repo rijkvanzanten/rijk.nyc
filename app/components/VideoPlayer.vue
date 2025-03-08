@@ -29,7 +29,7 @@ defineProps<{
 </template>
 
 <style scoped>
-.video {
+/* .video {
 	display: block;
 	margin: 2rem 0 !important;
 	box-shadow: 0.5rem 0.5rem black;
@@ -41,5 +41,5 @@ defineProps<{
 	inset-inline-start: 50%;
 	inset-block-start: 50%;
 	transform: translate(-50%, -50%);
-}
+} */
 </style>

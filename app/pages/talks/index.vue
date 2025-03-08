@@ -28,11 +28,3 @@ const { data: talks } = await useAsyncData('$talks-list', () => {
 	</div>
 </template>
 
-<style scoped>
-ol {
-	margin-top: 2rem !important;
-	display: block;
-	list-style: none;
-	padding: 0;
-}
-</style>

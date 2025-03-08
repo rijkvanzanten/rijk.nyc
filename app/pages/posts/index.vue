@@ -26,10 +26,3 @@ const { data: posts } = await useAsyncData('$posts-list', () => {
 		</ol>
 	</div>
 </template>
-
-<style scoped>
-ol {
-	list-style: none;
-	padding: 0;
-}
-</style>
