@@ -1,58 +1,23 @@
 <template>
-	<nav>
-		<NuxtLink to="/">
-			/about
-		</NuxtLink>
+	<div class="max-w-lg lg:text-end lg:sticky lg:top-0">
+		<h2 class="font-bold lg:mb-5 lg:block">Rijk van Zanten</h2>
 
-		<NuxtLink to="/talks">
-			/talks
-		</NuxtLink>
+		<nav class="flex justify-between lg:flex-col gap-1">
+			<SiteLink to="/">
+				/about
+			</SiteLink>
 
-		<NuxtLink to="/posts">
-			/posts
-		</NuxtLink>
+			<SiteLink to="/talks">
+				/talks
+			</SiteLink>
 
-		<NuxtLink to="/uses">
-			/uses
-		</NuxtLink>
-	</nav>
+			<SiteLink to="/posts">
+				/posts
+			</SiteLink>
+
+			<SiteLink to="/uses">
+				/uses
+			</SiteLink>
+		</nav>
+	</div>
 </template>
-
-<style scoped>
-nav {
-	background-color: var(--background-color);
-	display: grid;
-	grid-template-columns: subgrid;
-	padding: var(--space-lg);
-	text-align: center;
-}
-
-a {
-	grid-column: auto / span 2;
-}
-
-@media (width > 950px) {
-	nav {
-		display: block;
-		text-align: start;
-	}
-
-	a {
-		display: block;
-
-		& + a {
-			margin-top: 1rem;
-		}
-	}
-}
-
-.router-link-active {
-	position: relative;
-}
-
-.router-link-active::before {
-	content: '→';
-	position: absolute;
-	inset-inline-start: -1.5ch;
-}
-</style>
