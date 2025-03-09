@@ -1,25 +1,19 @@
 <script lang="ts" setup>
-const { data: page } = await useAsyncData('/talks', () => {
-	return queryCollection('pages').path('/talks').first();
+const { data: page } = await useAsyncData("/talks", () => {
+	return queryCollection("pages").path("/talks").first();
 });
 
-const { data: talks } = await useAsyncData('$talks-list', () => {
-	return queryCollection('talks').select('path', 'title').all();
+const { data: talks } = await useAsyncData("$talks-list", () => {
+	return queryCollection("talks").select("path", "title").all();
 });
 </script>
 
 <template>
 	<div>
-		<ContentRenderer
-			v-if="page"
-			:value="page"
-		/>
+		<ContentRenderer v-if="page" :value="page" />
 
 		<ol v-if="talks">
-			<li
-				v-for="article in talks"
-				:key="article.path"
-			>
+			<li v-for="article in talks" :key="article.path">
 				<NuxtLink :to="article.path">
 					{{ article.title }}
 				</NuxtLink>
@@ -27,4 +21,3 @@ const { data: talks } = await useAsyncData('$talks-list', () => {
 		</ol>
 	</div>
 </template>
-

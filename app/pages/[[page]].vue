@@ -2,15 +2,10 @@
 const route = useRoute();
 
 const { data: page } = await useAsyncData(route.path, () => {
-	return queryCollection('pages').path(route.path).first();
+	return queryCollection("pages").path(route.path).first();
 });
 </script>
 
 <template>
-	<div>
-		<ContentRenderer
-			v-if="page"
-			:value="page"
-		/>
-	</div>
+	<ContentRenderer v-if="page" :value="page" />
 </template>

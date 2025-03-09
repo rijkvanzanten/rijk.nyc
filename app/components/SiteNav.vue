@@ -1,23 +1,23 @@
 <template>
-	<div>
-		<h2>Rijk van Zanten</h2>
+	<div class="max-w-lg lg:text-end lg:sticky lg:top-0">
+		<h2 class="font-bold lg:mb-5 lg:block">Rijk van Zanten</h2>
 
-		<nav>
-			<NuxtLink to="/">
+		<nav class="flex justify-between lg:flex-col gap-1">
+			<SiteLink to="/">
 				/about
-			</NuxtLink>
+			</SiteLink>
 
-			<NuxtLink to="/talks">
+			<SiteLink to="/talks">
 				/talks
-			</NuxtLink>
+			</SiteLink>
 
-			<NuxtLink to="/posts">
+			<SiteLink to="/posts">
 				/posts
-			</NuxtLink>
+			</SiteLink>
 
-			<NuxtLink to="/uses">
+			<SiteLink to="/uses">
 				/uses
-			</NuxtLink>
+			</SiteLink>
 		</nav>
 	</div>
 </template>

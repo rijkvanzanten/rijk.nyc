@@ -7,10 +7,10 @@ defineProps<{
 <template>
 	<ScriptYouTubePlayer
 		:video-id="videoId"
-		class="video"
+		class="block my-4"
 	>
 		<template #awaitingLoad>
-			<div class="play-button">
+			<div class="absolute w-12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 				<svg
 					height="100%"
 					version="1.1"
@@ -27,19 +27,3 @@ defineProps<{
 		</template>
 	</ScriptYouTubePlayer>
 </template>
-
-<style scoped>
-/* .video {
-	display: block;
-	margin: 2rem 0 !important;
-	box-shadow: 0.5rem 0.5rem black;
-}
-
-.play-button {
-	inline-size: 64px;
-	position: absolute;
-	inset-inline-start: 50%;
-	inset-block-start: 50%;
-	transform: translate(-50%, -50%);
-} */
-</style>

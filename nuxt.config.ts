@@ -73,6 +73,10 @@ export default defineNuxtConfig({
 	},
 
 	fonts: {
+		experimental: {
+			processCSSVariables: true,
+		},
+
 		defaults: {
 			weights: [400, 700],
 		},
