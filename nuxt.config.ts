@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 		"@nuxtjs/sitemap",
 		"@nuxt/icon",
 		"@nuxt/content",
+		"@nuxtjs/color-mode",
 	],
 
 	css: ["~/assets/css/main.css"],
@@ -31,6 +32,24 @@ export default defineNuxtConfig({
 			],
 			meta: [{ name: "apple-mobile-web-app-title", content: "rijk.nyc" }],
 		},
+	},
+
+	content: {
+		build: {
+			markdown: {
+				highlight: {
+					theme: {
+						default: "github-light",
+						'dark-mode': "github-dark",
+					},
+				},
+			},
+		},
+	},
+
+	colorMode: {
+		preference: 'light',
+		classSuffix: '',
 	},
 
 	site: {
