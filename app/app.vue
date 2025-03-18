@@ -1,5 +1,5 @@
 <template>
-	<div class="lg:flex font-serif lg:mx-auto lg:w-max lg:items-start">
+	<div class="dark:text-white lg:flex font-serif lg:mx-auto lg:w-max lg:items-start">
 		<NuxtRouteAnnouncer />
 
 		<SiteNav class="p-4" />

@@ -5,3 +5,7 @@
 @theme {
 	--font-serif: "Triplicate A Poly", monospace;
 }
+
+body {
+	@apply dark:bg-slate-950;
+}
