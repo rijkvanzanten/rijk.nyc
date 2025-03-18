@@ -37,18 +37,6 @@ export default defineNuxtConfig({
 		url: "rijk.nyc",
 	},
 
-	content: {
-		build: {
-			markdown: {
-				remarkPlugins: {
-					"@mavrin/remark-typograf": {
-						locale: ["en-US"],
-					},
-				},
-			},
-		},
-	},
-
 	vite: {
 		plugins: [tailwindcss()],
 	},
