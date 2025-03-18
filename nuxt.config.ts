@@ -5,15 +5,15 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 
 	modules: [
-		"@nuxt/eslint",
-		"@nuxt/fonts",
-		"nuxt-time",
-		"@nuxt/scripts",
+		"@nuxtjs/color-mode",
 		"@nuxtjs/robots",
 		"@nuxtjs/sitemap",
-		"@nuxt/icon",
 		"@nuxt/content",
-		"@nuxtjs/color-mode",
+		"@nuxt/eslint",
+		"@nuxt/fonts",
+		"@nuxt/icon",
+		"@nuxt/scripts",
+		"nuxt-time",
 	],
 
 	css: ["~/assets/css/main.css"],
@@ -34,22 +34,8 @@ export default defineNuxtConfig({
 		},
 	},
 
-	content: {
-		build: {
-			markdown: {
-				highlight: {
-					theme: {
-						default: "github-light",
-						'dark-mode': "github-dark",
-					},
-				},
-			},
-		},
-	},
-
 	colorMode: {
-		preference: 'light',
-		classSuffix: '',
+		classSuffix: "",
 	},
 
 	site: {
