@@ -12,8 +12,8 @@ const { data: posts } = await useAsyncData("$posts-list", () => {
 	<div>
 		<ContentRenderer v-if="page" :value="page" />
 
-		<ol v-if="posts" class="list-none">
-			<li v-for="article in posts" :key="article.path">
+		<ol v-if="posts" class="list-none p-0">
+			<li v-for="article in posts" :key="article.path" class="p-0">
 				<NuxtLink :to="article.path">
 					<NuxtTime :datetime="article.date" />
 					— {{ article.title }}
