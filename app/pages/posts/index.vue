@@ -12,7 +12,7 @@ const { data: posts } = await useAsyncData("$posts-list", () => {
 	<div>
 		<ContentRenderer v-if="page" :value="page" />
 
-		<ol v-if="posts">
+		<ol v-if="posts" class="list-none">
 			<li v-for="article in posts" :key="article.path">
 				<NuxtLink :to="article.path">
 					<NuxtTime :datetime="article.date" />
