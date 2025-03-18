@@ -27,7 +27,6 @@
 		"vue-router": "latest"
 	},
 	"devDependencies": {
-		"@mavrin/remark-typograf": "2.2.0",
 		"@nuxt/scripts": "0.11.1",
 		"@nuxtjs/sitemap": "7.2.7",
 		"nuxt-time": "1.0.3",
